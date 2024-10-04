@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;family=Raleway:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>ExoNova</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="container">
+  <video class="video__background" src="Assets/Video Background.mp4" loop autoplay></video>
+  <video class="video__background stars__background" src="Assets//Stars backgound.mp4" loop autoplay></video>
+
+  <a href="#" class="scroll-up-btn show" id="scroll-up"></a>
+  <img class="exit-btn hide" id="exit-btn" src="Images/Exit Button.png" alt="exit-btn" onclick="hide()">
+
+  <header class="header" id="header">
+    <div class="team">
+      <img class="logo" src="Assets/Team logo.png" alt="Team Logo">
+      <h3 class="team__name">ExoNova Team</h3>
+    </div>
+    <nav class="nav__bar">
+      <a href="#introduction" class="nav__links">Introduction</a>
+      <a href="#exoplanet__types" class="nav__links">Explore planets</a>
+    </nav>
+  </header>
+
+  <section class="homepage">
+    <div class="home__content">
+      <h2 class="welcome__text typed-out">Welcome to ExoNova Website</h2>
+      <div class="home-btns">
+        <a class="home-btn" href="#">Explore</a>
+        <a class="home-btn" href="#">Check Introduction</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section background exoplanet__definition" id="introduction">
+    <h2 class="h2-heading" data-aos="fade-up">Definition of Exoplanets and <br> why to study them</h2>
+    <p class="section__content" data-aos="fade-up">
+      Exoplanets are planets that orbit stars outside our solar system. The first confirmed exoplanet was discovered in
+      1992 around a pulsar. Some exoplanets are similar in size to Earth, while others are much larger, like gas giants.
+      The Kepler Space Telescope was a major tool in discovering many exoplanets. Exoplanets are often located in what
+      scientists call the “habitable zone” of their star. A habitable zone is where liquid water could potentially exist
+      on the surface of a planet. There are many methods used to detect exoplanets, such as the transit method and the
+      radial velocity method.
+    </p>
+    <img class="section__img" src="Images/Exoplanet definition 2.jpg" alt="Exoplanet OGLE-2007-BLG-349"
+      data-aos="fade-up" />
+    <img class="section__img big-screen" src="Images/Exoplanet definition 1.jpg"
+      alt="An illustration of Kepler-1649c orbiting around its host red dwarf star." data-aos="fade-up" />
+    <p class="section__content" data-aos="fade-up">
+      The discovery of exoplanets has greatly expanded our understanding of the universe. Some exoplanets are located
+      hundreds or even thousands of light years away from Earth. Exoplanets are often named using the name of their host
+      star followed by a letter. Scientists are particularly interested in exoplanets that are similar in size and
+      composition to Earth. The search for exoplanets is part of the larger quest to find signs of extraterrestrial
+      life. In the future, advanced telescopes may allow us to directly image exoplanets and study their atmospheres.
+    </p>
+    <img class="section__img small-screen" src="Images/Exoplanet definition 1.jpg"
+      alt="An illustration of Kepler-1649c orbiting around its host red dwarf star." data-aos="fade-up" />
+  </section>
+
+  <section class="section exoplanets-types" id="exoplanet__types">
+
+    <h2 class="h2-heading" data-aos="fade-up">Types of Exoplanets</h2>
+
+    <figure class="exoplanet" data-aos="fade-up">
+      <h3 class="h3-heading">Gas giants</h3>
+      <img class="section__img" src="Images/Gas Gaint.png" alt="">
+      <h4 class="planet__name">WASP-12b</h4>
+      <p class="planet__description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius corporis tempore
+        commodi odio cum laboriosam saepe distinctio explicabo quibusdam eaque!
+      </p>
+      <button class="show__details" onclick="showWasp()">Click for details</button>
+    </figure>
+
+    <figure class="exoplanet" data-aos="fade-up">
+      <h3 class="h3-heading">Super-Earths</h3>
+      <img class="section__img" src="Images/Super Earth.png" alt="">
+      <h4 class="planet__name">Proxima Centauri B</h4>
+      <p class="planet__description">
+        These are rocky planets larger than Earth but smaller than Neptune. They may or may not be habitable.
+      </p>
+      <button class="show__details" onclick="showProxima()">Click for details</button>
+    </figure>
+
+    <figure class="exoplanet" data-aos="fade-up">
+      <h3 class="h3-heading">Neptune-like Planets</h3>
+      <img class="section__img" src="Images/Neptune-like.png" alt="">
+      <h4 class="planet__name">Gliese 436 b</h4>
+      <p class="planet__description">
+        These are gas or ice giants, similar in size to Neptune and Uranus, often found farther from their star.
+      </p>
+      <button class="show__details" onclick="showGliese()">Click for details</button>
+    </figure>
+
+    <figure class="exoplanet" data-aos="fade-up">
+      <h3 class="h3-heading">Terrestrial</h3>
+      <img class="section__img" src="Images/Terristerial.png" alt="">
+      <h4 class="planet__name">TRAPPIST-1e</h4>
+      <p class="planet__description">
+        These are rocky planets similar in size and composition to Earth, located in the habitable zone of their star
+        where liquid water could exist
+      </p>
+      <button class="show__details" onclick="showTrasppist()">Click for details</button>
+    </figure>
+
+  </section>
+
+  <section class="section history" id="history">
+    <h2 class="h2-heading" data-aos="fade-up">History of Exoplanet Exploration</h2>
+    <div class="historic__event" data-aos="fade-up">
+      <h3 class="h3-heading">1952</h3>
+      <p class="section__content">
+        Otto Struve suggests that planets could exist around stars and could be detectable by
+        observing variations in the star’s motion.
+      </p>
+    </div>
+
+    <div class="historic__event" data-aos="fade-up">
+      <h3 class="h3-heading">1992</h3>
+      <p class="section__content">
+        Polish astronomer Aleksander Wolszczan and Canadian Dale Frail discover the first confirmed exoplanets, PSR
+        B1257+12 b and c, orbiting a pulsar (a neutron star).
+      </p>
+    </div>
+
+    <div class="historic__event" data-aos="fade-up">
+      <h3 class="h3-heading">1995</h3>
+      <p class="section__content">
+        Michel Mayor and Didier Queloz of the University of Geneva confirm the first exoplanet orbiting a sun-like star,
+        51 Pegasi b. This discovery uses the radial velocity method and marks the beginning of modern exoplanet
+        discovery.
+      </p>
+    </div>
+
+    <div class="historic__event" data-aos="fade-up">
+      <h3 class="h3-heading">2005</h3>
+      <p class="section__content">
+        NASA launches the Kepler Space Telescope, revolutionizing exoplanet detection by using the transit method to
+        identify thousands of potential exoplanets.
+      </p>
+    </div>
+
+    <div class="historic__event" data-aos="fade-up">
+      <h3 class="h3-heading">2011</h3>
+      <p class="section__content">
+        The first detection of a potentially habitable exoplanet, Kepler-22b, which is in the habitable zone of its
+        star, is announced.
+      </p>
+    </div>
+
+    <div class="historic__event" data-aos="fade-up">
+      <h3 class="h3-heading">2020</h3>
+      <p class="section__content">
+        The total confirmed number of exoplanets passes 4,000, and the range of known exoplanet types continues to
+        diversify.
+      </p>
+    </div>
+
+    <div class="historic__event" data-aos="fade-up">
+      <h3 class="h3-heading">2021</h3>
+      <p class="section__content"> NASA’s James Webb Space Telescope (JWST) launches, designed to enhance the study of
+        exoplanet atmospheres and potentially detect bio-signatures.</p>
+    </div>
+  </section>
+
+  <section class="section stars__types" id="Stars__types">
+
+    <h2 class="h2-heading">Type of stars</h2>
+    <p class="stars-overview">
+      The universe’s stars range in brightness, size, color, and behavior. Some types change into others very quickly,
+      while others stay relatively unchanged over trillions of years.
+    </p>
+
+    <figure class="star" data-aos="fade-up">
+      <h3 class="h3-heading">red giant</h3>
+      <img class="section__img" src="Images/Red gaint.jpg" alt="">
+      <p class="planet__description">
+        Our sun will transition into a red giant in approximately five billion years. Once a red giant has shed its
+        atmosphere, only its core remains, referred to as a white dwarf. A white dwarf is typically comparable in size
+        to
+        Earth but possesses a mass several hundred thousand times greater.
+      </p>
+    </figure>
+
+    <figure class="star" data-aos="fade-up">
+      <h3 class="h3-heading">white dwarfs</h3>
+      <img class="section__img" src="Images/white dwarf.jpg" alt="">
+      <p class="planet__description">
+        it's an earth sized stars shaped when a red gaint has shed all its atmosphere. It emits visible light ranging
+        from blue-white to red.
+      </p>
+    </figure>
+
+    <figure class="star" data-aos="fade-up">
+      <h3 class="h3-heading">Red Dwarfs</h3>
+      <img class="section__img" src="Images/red dwarf.jpg" alt="">
+      <p class="planet__description">
+        Red dwarfs are the smallest main-sequence stars, comprising a mere fraction of the Sun’s size and mass. They are
+        also the coolest and exhibit a more orange hue rather than red. red dwarfs constitute approximately 75% of the
+        Milky Way galaxy’s stellar population.
+      </p>
+    </figure>
+
+    <figure class="star" data-aos="fade-up">
+      <h3 class="h3-heading">Main Sequence Star</h3>
+      <img class="section__img" src="Images/Main sequence.jpg" alt="">
+      <p class="planet__description">
+        Main sequence stars make up around 90% of the universe’s stellar population. They range in luminosity, color,
+        and size – from a tenth to 200 times the Sun’s mass – and live for millions to billions of years.
+      </p>
+    </figure>
+
+    <figure class="star" data-aos="fade-up">
+      <h3 class="h3-heading">neutron star</h3>
+      <img class="section__img" src="Images/Neutron.jpg" alt="">
+      <p class="planet__description">
+        A neutron star is formed when a main-sequence star with a mass between approximately eight and twenty times that
+        of the Sun exhausts its core hydrogen
+      </p>
+    </figure>
+
+    <figure class="star" data-aos="fade-up">
+      <h3 class="h3-heading">Brown dwarfs</h3>
+      <img class="section__img" src="Images/brown dwarf.jpg" alt="">
+      <p class="planet__description">
+        Brown dwarfs are not classified as stars. They possess a mass greater than planets but fall short of the mass
+        required to be considered stars. Typically, their mass ranges between 13 and 80 times that of Jupiter.
+      </p>
+    </figure>
+  </section>
+
+  <section class="section methods">
+    <h2 class="h2-heading">Discovery Methods</h2>
+    <div>
+      <h3 class="h3-heading">Transit Method</h3>
+      <br>
+      <p class="section__content">This method watches for small dips in the brightness of a star. When a planet passes
+        in front of its star, it blocks some light, and scientists can detect this drop in brightness to find the
+        planet.
+      </p>
+    </div>
+    <img src="Images/transit.png" alt="" class="section__img">
+    <img src="Images/Radial.png" alt="" class="section__img big-screen">
+    <div>
+      <h3 class="h3-heading">radial velocity method</h3>
+      <br>
+      <p class="section__content">A planet’s gravity pulls on its star, making the star wobble slightly. By measuring
+        this wobble, scientists can tell if a planet is there, even if they can’t see the planet directly.</p>
+    </div>
+    <img src="Images/Radial.png" alt="" class="section__img small-screen">
+    <div>
+      <h3 class="h3-heading">Gravitational Microlensing</h3>
+      <br>
+      <p class="section__content">When one star passes in front of another, the closer star can bend the light of the
+        one behind it, acting like a lens. If a planet is around the closer star, it can change how this light looks,
+        which tells scientists a planet is there.</p>
+    </div>
+    <img src="Images/microlensing.jpg" alt="" class="section__img">
+    <div>
+      <h3 class="h3-heading">Astrometry</h3>
+      <br>
+      <p class="section__content">Scientists carefully measure how a star moves. If it moves slightly back and forth, it
+        might be because a planet is pulling on it.</p>
+    </div>
+    <div>
+      <h3 class="h3-heading">direct imaging</h3>
+      <br>
+      <p class="section__content">Sometimes, special tools can block out the light from a star, making it easier to take
+        pictures of planets orbiting that star. This works best for big planets far from their stars.</p>
+    </div>
+  </section>
+
+  <section class="section habitability">
+    <h2 class="h2-heading">habitability</h2>
+    <p class="section__content">
+      The habitable zone is the optimal distance from a star where conditions allow liquid
+      water to exist, making it potentially suitable for life. This “Goldilocks zone” varies depending on the star’s
+      size and luminosity. Earth-sized, rocky planets are prime candidates for habitability, but most detected planets
+      orbit red dwarf stars, which have smaller habitable zones. These stars expose nearby planets to intense radiation,
+      making life less likely. Larger, hotter stars have wider habitable zones, offering better prospects for
+      life-bearing planets, although such stars are rarer than red dwarfs in the Milky Way.
+    </p>
+    <p class="section__content">
+      A planet’s habitability depends on interactions between the planet, its solar system,
+      and its star. A habitable planet must sustain life for a long time, needing liquid water, energy, and nutrients.
+      The “habitable zone” is the region around a star where liquid water can exist. While Earth’s position in the Sun’s
+      habitable zone has shaped our understanding, some planets in similar zones around stars with intense X-ray and UV
+      radiation could lose their atmospheres. Researchers are redefining habitability and developing models to explore
+      different planetary environments that could support life and produce detectable biosignatures.
+    </p>
+  </section>
+
+  <section class="section quiz-startPage">
+    <h1 class="h1-heading">Take the quiz, <br> let´s apply what you've learned so far!</h1>
+    <button class="quiz-startBtn h3-heading" id="start-quiz" onclick="showQuiz()">Start Quiz</button>
+  </section>
+
+  <section class="quiz__app hide" id="quiz-container">
+    <div class="quiz-container" id="quiz">
+      <div class="quiz-header">
+        <h2 class="question-headline" id="question-headline">Question Text</h2>
+        <ul class="question-list">
+          <li class="question-item">
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">Answer</label>
+          </li>
+          <li class="question-item">
+            <input type="radio" name="answer" id="b" class="answer">
+            <label for="b" id="b_text">Answer</label>
+          </li>
+          <li class="question-item">
+            <input type="radio" name="answer" id="c" class="answer">
+            <label for="c" id="c_text">Answer</label>
+          </li>
+          <li class="question-item">
+            <input type="radio" name="answer" id="d" class="answer">
+            <label for="d" id="d_text">Answer</label>
+          </li>
+        </ul>
+      </div>
+      <button id="submit" class="submit-btn">Submit</button>
+    </div>
+  </section>
+
+  <section class="planet-info hide" id="wasp">
+    <div class="planet-info-container">
+      <h2 class="planet-name">WASP-12b</h2>
+      <iframe src="https://eyes.nasa.gov/apps/exo/#/planet/WASP-12_b" title="" allow="fullscreen"
+        data-gtm-yt-inspected-6="true">Unable to render the provided source</iframe>
+      <a href="https://eyes.nasa.gov/apps/exo/#/planet/WASP-12_b" class="small-screen"> click to see the 3D Model</a>
+      <ul class="properties">
+        <li class="property"><b>Discovery Method:</b> Transit method</li>
+        <li class="property"><b>Star:</b> WASP-12 (Sun-like star)</li>
+        <li class="property"><b>Orbital Period (Day Period):</b> 1.1 days</li>
+        <li class="property"><b>Temperature:</b> ~2,500°C</li>
+        <li class="property"><b>Atmosphere:</b> Contains heavy metals like magnesium and aluminum.</li>
+        <li class="property"><b>Distance from Earth:</b> 870 light-years</li>
+        <li class="property"><b>Size:</b> 1.9 times the radius of Jupiter</li>
+        <li class="property"><b>Moons:</b> No confirmed moons.</li>
+        <li class="property"><b>Eccentricity:</b> 0.04</li>
+        <li class="property"><b>Unique Fact:</b> It has a weird shape since it's being devoured by its sun</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="planet-info hide" id="proxima">
+    <div class="planet-info-container">
+      <h2 class="planet name">Proxima Centauri B</h2>
+      <iframe src="https://eyes.nasa.gov/apps/exo/#/planet/Proxima_Cen_b" allow="fullscreen"
+        data-gtm-yt-inspected-14="true">Unable to render the provided source</iframe>
+      <a href="https://eyes.nasa.gov/apps/exo/#/planet/Proxima_Cen_b" class="small-screen"> click to see the 3D
+        Model</a>
+      <ul class="properties">
+        <li class="property"><b>Discovery Method:</b> Radial Velocity</li>
+        <li class="property"><b>Star:</b> Proxima Centauri (red dwarf).</li>
+        <li class="property"><b>Orbital Period (Day Period):</b> 11.2</li>
+        <li class="property"><b>Temperature</b> 6,800 C</li>
+        <li class="property"><b>Atmosphere:</b> Unknown, but maybe thin or non-existent due to strong stellar flares.
+        </li>
+        <li class="property"><b>Distance from its star:</b> 0.05 AU (7.5 million km) – much closer than Mercury is to
+          our Sun.</li>
+        <li class="property"><b>Distance from Earth:</b> ~4.24 light-years.</li>
+        <li class="property"><b>Size:</b> 1.07 Earths</li>
+        <li class="property"><b>Moons:</b> Unknown.</li>
+        <li class="property"><b>Eccentricity:</b> 0.02</li>
+        <li class="property"><b>Unique Fact:</b> None</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="planet-info hide" id="gliese">
+    <div class="planet-info-container">
+      <h2 class="planet-name">Gliese 436 b</h2>
+      <iframe src="https://eyes.nasa.gov/apps/exo/#/planet/GJ_436_b" allow="fullscreen"
+        data-gtm-yt-inspected-11="true">Unable to render the provided source</iframe>
+      <a href="https://eyes.nasa.gov/apps/exo/#/planet/GJ_436_b" class="small-screen"> click to see the 3D Model</a>
+      <ul class="properties">
+        <li class="property"><b>Discovery Method:</b> Radial Velocity</li>
+        <li class="property"><b>Star:</b> red dwarf star Gliese 436</li>
+        <li class="property"><b>Orbital Period (Day Period):</b> 2.6 days</li>
+        <li class="property"><b>Temperature</b> 427°C</li>
+        <li class="property"><b>Atmosphere:</b> Likely contains hydrogen, helium, and other gases. It has shown evidence
+          of a "tail" of escaping hydrogen, indicating significant atmospheric evaporation.</li>
+        <li class="property"><b>Distance from sun:</b> 0.029 AU (Astronomical Units), which is much closer than Mercury
+          is to the Sun</li>
+        <li class="property"><b>Size:</b> 22.1 Earths</li>
+        <li class="property"><b>Moons:</b> Unknown</li>
+        <li class="property"><b>Eccentricity:</b> 0.14</li>
+        <li class="property"><b>Unique Fact:</b> none</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="planet-info hide" id="trappist">
+    <div class="planet-info-container">
+      <h2 class="planet-name">TRAPPIST-1e</h2>
+      <iframe src="https://eyes.nasa.gov/apps/exo/#/planet/TRAPPIST-1_e" allow="fullscreen"
+        data-gtm-yt-inspected-12="true">Unable to render the provided source</iframe>
+      <a href="https://eyes.nasa.gov/apps/exo/#/planet/TRAPPIST-1_e" class="small-screen"> click to see the 3D Model</a>
+      <ul class="properties">
+        <li class="property"><b>Discovery Method:</b> Transit Method</li>
+        <li class="property"><b>Star:</b> TRAPPIST-1 (ultra-cool red dwarf).</li>
+        <li class="property"><b>Orbital Period (Day Period):</b> 6.1 days</li>
+        <li class="property"><b>Temperature</b> −48°C</li>
+        <li class="property"><b>Atmosphere:</b> Unknown, but could have a thin atmosphere similar to Earth’s.</li>
+        <li class="property"><b>Distance from Earth:</b> ~39 light-years.</li>
+        <li class="property"><b>Size:</b> 0.692 Earths</li>
+        <li class="property"><b>Moons:</b> Unknown</li>
+        <li class="property"><b>Eccentricity:</b> 0.01</li>
+        <li class="property"><b>Unique Fact:</b> none</li>
+      </ul>
+    </div>
+  </section>
+</body>
+
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script> AOS.init() </script>
+
+
+</html>
