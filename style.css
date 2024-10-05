@@ -542,6 +542,10 @@ iframe {
     grid-template-columns: 1fr;
   }
 
+  .h1-heading {
+  font-size: var(--font-size-subheading);
+  }
+
   .small-screen {
     display: block;
   }
