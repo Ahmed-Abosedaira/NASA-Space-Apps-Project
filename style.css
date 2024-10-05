@@ -636,7 +636,10 @@ iframe {
   .homepage {
     height: 8vh;
   }
-  .quiz-startBtn{
+  .quiz-startBtn {
     padding: 1rem;
+  }
+  .h1-heading {
+    font-size: var(--font-size-text);
   }
 }
