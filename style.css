@@ -636,4 +636,7 @@ iframe {
   .homepage {
     height: 8vh;
   }
+  .quiz-startBtn{
+    padding: 1rem;
+  }
 }
